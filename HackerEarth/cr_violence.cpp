@@ -3,7 +3,7 @@ Brief Description:
 
 Given an integer (NN), then next line consists of NN space separated natural numbers
 between 1 and N inclusive such that the  ith number denotes the the crush of boy i
-The next line consists of N space separated natural numbers between 
+The next line consists of N space separated natural numbers between
 1 and N inclusive such that the ith number denotes the the crush of girl i
 print two space separated integers, the answer to doctor's questions:
 
@@ -14,7 +14,7 @@ Pre-requisites: Basic Programming Skills, Implementation Skills.
 
 Difficulty Level: Easy.
 
-Hints: Store the crush for every boy and every girl in a suitable data structure 
+Hints: Store the crush for every boy and every girl in a suitable data structure
 For example: Array.
 
 Detailed Editorial:
@@ -22,19 +22,19 @@ Detailed Editorial:
 This Question depends on your implementation skills and how to store the data given in the question.
 
 Firstly: You should have 2 arrays to store the crush of every boy and every girl.
-Secondly: You should loop over boys and girls and check if the crush of the boy 
-(i), girl 
+Secondly: You should loop over boys and girls and check if the crush of the boy
+(i), girl
 (
 k
 )
 (k)
 has another crush different from him:
 
-So if that happens, the boy 
+So if that happens, the boy
 (
 i
 )
-(i) will beat the girl 
+(i) will beat the girl
 (
 k
 )
@@ -50,11 +50,11 @@ Redo the same concept and loop over girls and check their crushes.
 Thirdly: loop over boys and girls and check which student (boy or a girl)
 who receives the maximum number of beats.
 
-Fourthly: loop over boys and girls and check if boy 
+Fourthly: loop over boys and girls and check if boy
 (
 i
 )
-(i) has a crush girl 
+(i) has a crush girl
 (
 k
 )
@@ -63,7 +63,7 @@ k
 k
 )
 (k)
-has a crush boy 
+has a crush boy
 (
 j
 )
@@ -71,11 +71,11 @@ j
 (
 j
 )
-(j) (the girl 
+(j) (the girl
 (
 g
 )
-(g)) has a crush boy 
+(g)) has a crush boy
 (
 i
 )
@@ -84,7 +84,7 @@ So increase the number of pairs who will beat each other.
 
 Note 1: If you got confused by the last step, just think about it as a cycle.
 
-Note 2: Output the number of 
+Note 2: Output the number of
 p
 a
 i
@@ -92,7 +92,7 @@ r
 s
 /
 2
-pairs/2, because you will add the same pair 
+pairs/2, because you will add the same pair
 2
 2 times
 or make a boolean array which indicates that boy
@@ -100,13 +100,13 @@ or make a boolean array which indicates that boy
 j
 )
 (j) has been already in a pair,
-so when you come to 
+so when you come to
 (
 j
 )
 (j) index, just continue.
 
-Time Complexity: 
+Time Complexity:
 O
 (
 C
@@ -122,7 +122,7 @@ N
 )
 O(Constant∗N).
 
-Note: 
+Note:
 C
 o
 n
@@ -133,7 +133,7 @@ n
 t
 Constant = number of loops in the code.
 
-Memory Space Complexity: 
+Memory Space Complexity:
 O
 (
 C
@@ -149,7 +149,7 @@ N
 )
 O(Constant∗N).
 
-Note: 
+Note:
 C
 o
 n
@@ -204,7 +204,7 @@ int main()
 
             if(girls[ boys[i] ] != i) boy_beated[ girls[ boys[i] ] ]++;         // increase the number of beats that this boy take
 
-            if(boys[ girls[i] ] != i) girl_beated[ boys[ girls[i] ]  ]++;       
+            if(boys[ girls[i] ] != i) girl_beated[ boys[ girls[i] ]  ]++;
         }
 
         int maxi = -1;
