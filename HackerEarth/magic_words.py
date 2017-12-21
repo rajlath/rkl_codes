@@ -1,8 +1,10 @@
 primes = [67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]
 
+
+
 def nearest(lst, n):
     return min(lst, key=lambda x:abs(x-n))
-    
+
 for i in range(int(input())):
     lens = int(input())
     st   = input()
@@ -10,8 +12,8 @@ for i in range(int(input())):
     for i in st:
         near = nearest(primes,ord(i))
         tg +=  chr(near)
-    print(tg)    
-    
+    print(tg)
+
 '''
 2
 375
@@ -24,5 +26,5 @@ CqemaIgISqOaeIqSgqqSqkSqaGOeqeaIGeqCYOqmCmekCOkYGaegOGeqGSqYkaOIgOqOOmqSGqqGeGIe
 CYGqOqSaGYmggqCqqqSa
 
 '''
-    
-        
+
+
