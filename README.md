@@ -12,3 +12,5 @@ CodeForces
 There is also a folder for miscleneous soltuion mostly attempting frequent used
 data structure and problems implementation.
 
+Some solution can be incorrect or incomplete.
+
