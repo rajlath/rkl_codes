@@ -62,7 +62,8 @@ def mergeSort(lst, reveresed):
         merged = merge(first, second, lst, reveresed)
     return lst
 
-
-print(mergeSort([12,42,31,34,87,11,98],False))
+l = [3, 1, 2]
+l = mergeSort([l],True)
+print(l)
 
 

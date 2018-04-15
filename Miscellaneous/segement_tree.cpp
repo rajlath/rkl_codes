@@ -6,7 +6,6 @@ const int N = 100000;               // limit for array size
 int n;                              // array size
 int tree[2 * N];                    // Max size of tree
 
-// function to build the tree
 void build( int arr[])
 {
 
@@ -20,7 +19,7 @@ void build( int arr[])
 
 // function to update a tree node
 void updateTreeNode(int p, int value)
-{
+§{
 
     tree[p+n] = value;               // set value at position p
     p = p+n;

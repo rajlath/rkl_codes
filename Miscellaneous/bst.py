@@ -29,6 +29,7 @@ def pre_order_traverse(root):
     print(root.data)
     pre_order_traverse(root.left)
     pre_order_traverse(root.right)
+
 def in_order_traverse(root):
     if root == None:return
     in_order_traverse(root.left)

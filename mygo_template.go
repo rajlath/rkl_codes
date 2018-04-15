@@ -1,9 +1,3 @@
-/* ******************************************
-*  Author : Raj lath  
-*  Created On : ${DATE}
-*  File : ${FILE}
-*******************************************
-*/
 package main
 
 import(
@@ -22,6 +16,15 @@ var scanner *bufio.Scanner
 
 func main(){
 	setup()
+	case_cnt = readInt()
+	for (i:=1; i <case_cnt; i++ ){
+		students = readInt()
+		updates  = readInt()
+		var a [5]int
+
+
+	}
+
 
 }
 

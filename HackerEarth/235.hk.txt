@@ -1,0 +1,2 @@
+read :: String -> Int
+filter ((==) read . sum) $ subsequences [2,3,5]

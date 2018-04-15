@@ -1,0 +1,1 @@
+print(" ".join([chr(ord(x)//2 + 5) for x in input()]))

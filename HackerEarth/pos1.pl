@@ -1,0 +1,1 @@
+$str =~ s/$find/$replace/g;

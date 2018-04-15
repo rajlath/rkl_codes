@@ -1,0 +1,1 @@
+for x in range(201):print([[x,"Bar"],["Foo","FooBar"]][x%5==0][x%7==0])

@@ -1,0 +1,53 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n, k int
+	fmt.Scan(&n, &k)
+	aa := make([]int, n, n)
+	for i := 0; i < n; i++ {
+		fmt.Scan(&aa[i])
+	}
+	count := 0
+	for _, v := range aa {
+		if v > 0 && v >= aa[k - 1] {
+			count++
+		}
+	}
+	fmt.Println(count)
+}
+
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+	for i := 0; i < n; i++ {
+		var s string
+		fmt.Scan(&s)
+		l := len(s)
+		if l <= 10 {
+			fmt.Println(s)
+		} else {
+			fmt.Printf("%c%d%c\n", s[0], l - 2, s[l - 1])
+		}
+	}
+}
+
+fun main(arg: Array<String>){
+    var s: String
+    val n = readLine()!!.toByte()
+    for (i in 1..n) {
+        s = readLine()!!
+        if (s.length > 10) println(s.first()+(s.length - 2).toString()+s.last())
+        else println(s)
+    }
+}
+fun main(args: Array<String>) {
+    val (n, k) = readLine()!!.split(" ").map(String::toInt)
+    val a = readLine()!!.split(" ").map(String::toInt)
+    println(a.filter { it > 0 && it >= a[k - 1] }.size)
+}
