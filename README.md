@@ -10,11 +10,11 @@ These are solutions attempted by me on online judges
 <li>Leetcode</li>
 <li>CodeForces</li>
   
-<ol>  
+</ol>  
   
 
 There is also a folder for miscleneous soltuion mostly attempting frequent used
 data structure and problems implementation.
 
-Some solution can be incorrect or incomplete.
+<Strong>Some solution can be incorrect or incomplete.</Strong>
 
