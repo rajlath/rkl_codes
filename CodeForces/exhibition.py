@@ -1,0 +1,1 @@
+print( ("10" * 999)[:[int(x) for x in input().split()][0]] )

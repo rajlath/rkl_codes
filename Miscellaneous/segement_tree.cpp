@@ -19,7 +19,7 @@ void build( int arr[])
 
 // function to update a tree node
 void updateTreeNode(int p, int value)
-§{
+{
 
     tree[p+n] = value;               // set value at position p
     p = p+n;

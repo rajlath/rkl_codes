@@ -1,4 +1,5 @@
 import sys, re
+from collections import defaultdict
 
 v = re.compile("\d+")
 board = [[0]*256 for _ in range(256)]
@@ -10,6 +11,7 @@ def set_row(l):
 def set_col(l):
   for i in range(256):
     board[i][l[0]] = l[1]
+
 
 def sum_row(l):
   print (sum(board[l[0]]))
