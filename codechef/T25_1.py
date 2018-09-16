@@ -1,0 +1,29 @@
+t=int(input())
+while(t):
+    t-=1
+    n,k=list(map(int,input().split()))
+    a=list(map(int,input().split()))
+    i=j=summ=0
+    if(min(a)>k):
+        print(0,k)
+        continue
+    maxi=[0,k]
+    while(i<n):
+        while(j<n and summ<=k):
+            summ+=a[j]
+            j+=1
+        if(summ>k):
+            j-=1
+            summ-=a[j]
+        #print(i,j,summ)
+        if(j-i>=maxi[0]):
+            if(j-i>maxi[0]):
+                maxi[0]=max(maxi[0],j-i)
+                maxi[1]=k-summ
+            else:
+                maxi[1]=min(maxi[1],k-summ)
+        #print(maxi)
+        summ-=a[i]
+        i+=1
+    #print(i,j,summ)
+    print(*maxi)

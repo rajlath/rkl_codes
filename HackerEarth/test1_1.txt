@@ -1,0 +1,13 @@
+def odd_cyclic_equiv(u, v):
+n, i, j = len(u), 0, 0
+while i < n and j < n:
+    k = 1
+    while k <= n and u[(i + k) % n] == v[(j + k) % n]:
+        k += 2
+    if k > n:
+        return True
+    if u[(i + k) % n] > v[(j + k) % n]:
+        i += k
+    else:
+        j += k
+return False

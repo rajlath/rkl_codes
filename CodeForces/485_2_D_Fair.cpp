@@ -9,4 +9,4 @@ int main(){
 	if ((n*3-cnt)&1) puts("Um_nik");
 	else puts("Petr");
 	return 0;
-} 
+}

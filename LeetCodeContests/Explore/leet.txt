@@ -1,0 +1,240 @@
+class Solution(object):
+    def stoneGame(self, piles):
+        """
+        :type piles: List[int]
+        :rtype: bool
+        """
+        if not piles: return False
+        r = piles
+        n = len(piles)
+        for m in xrange(1,n):
+            r = [max(piles[i]-r[i+1], piles[i+m]-r[i]) for i in xrange(n-m)]
+        return r[0] > 0
+
+
+class Solution(object):
+    def middleNode(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head: return head
+        a = b = head
+        while b and b.next:
+            a = a.next
+            b = b.next.next
+        return a
+
+from fractions import gcd
+
+class Solution(object):
+    def nthMagicalNumber(self, N, A, B):
+        """
+        :type N: int
+        :type A: int
+        :type B: int
+        :rtype: int
+        """
+        def bruteforce(n, a, b):
+            r = 0
+            aa = a
+            bb = b
+            for _ in xrange(n):
+                r = min(aa, bb)
+                while aa <= r: aa += a
+                while bb <= r: bb += b
+            return r
+
+        d = gcd(A, B)
+        a = A // d
+        b = B // d
+        r = a*b*(N//(a+b-1))
+        r += bruteforce(N%(a+b-1), a, b)
+        return (d * r) % (10**9 + 7)
+
+class Solution(object):
+    def profitableSchemes(self, G, P, group, profit):
+        """
+        :type G: int
+        :type P: int
+        :type group: List[int]
+        :type profit: List[int]
+        :rtype: int
+        """
+        # f(g, p) = number of schemes generate exactly p profit using exactly g gang members
+        # update to consider crime i:
+        # f(g, p) := f(g - group[i], p - profit[i])
+
+        M = 10**9 + 7
+        w = [[0 for _ in xrange(P+1)] for _ in xrange(G+1)]
+        w[0][0] = 1
+        for i in xrange(len(group)):
+            for g in xrange(G - group[i], -1, -1):
+                ng = g + group[i]
+                for p in xrange(P, -1, -1):
+                    if not w[g][p]: continue
+                    np = min(P, p + profit[i])
+                    w[ng][np] = (w[ng][np] + w[g][p]) % M
+        return sum(w[g][P] for g in xrange(G+1)) % M
+
+
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def middleNode(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        cnt = 0
+        t = head
+        while t.next !=None:
+            t=t.next
+            cnt+=1
+
+        for i in range((cnt+1)>>1):
+            head = head.next
+
+        return head
+
+from fractions import gcd
+class Solution(object):
+    def calc(self,N,A,B):
+        s=0
+        t=N
+        while s<=t:
+            mid = (s+t)>>1
+            val = mid * A
+            if val/A + val/B - val/self.it >=N:
+                t = mid-1
+            else:
+                s = mid+1
+
+        print(s)
+        return s*A
+
+    def nthMagicalNumber(self, N, A, B):
+        """
+        :type N: int
+        :type A: int
+        :type B: int
+        :rtype: int
+        """
+        self.it=A*B/gcd(A,B)
+        print self.it
+        return min(self.calc(N,A,B),self.calc(N,B,A))%int(1e9+7);
+
+
+class Solution(object):
+    def stoneGame(self, piles):
+        """
+        :type piles: List[int]
+        :rtype: bool
+        """
+        n = len(piles)
+        dp = [[0] * (n+5) for _ in range(n+5)]
+        for l in range(n):
+            for i in range(n-l):
+                dp[i][i+l] = max(piles[i] - dp[i+1][i+l], piles[i+l] - dp[i][i+l-1])
+        return dp[0][n-1] > 0
+
+def get_mg(a, b):
+    while a:
+        a, b = b % a, a
+    return b
+
+
+class Solution(object):
+    def nthMagicalNumber(self, N, A, B):
+        """
+        :type N: int
+        :type A: int
+        :type B: int
+        :rtype: int
+        """
+        M = 10 ** 9 + 7
+        if A > B:
+            A, B = B, A
+        if B % A == 0:
+            return (N * A) % M
+        c = get_mg(A, B)
+        t = A * B / c
+        l = t / A + t / B - 1
+        n = N / l
+        index = N % l
+        ans = t * n % M
+        a, b = 1, 1
+        rest = 0
+        while index:
+            index -= 1
+            aa = A * a
+            bb = B * b
+            if aa < bb:
+                a += 1
+                rest = aa
+            elif bb < aa:
+                b += 1
+                rest = bb
+        return (ans + rest) % M
+
+
+class Solution(object):
+    def profitableSchemes(self, G, P, group, profit):
+        """
+        :type G: int
+        :type P: int
+        :type group: List[int]
+        :type profit: List[int]
+        :rtype: int
+        """
+        M = 10 ** 9 + 7
+        n = len(profit)
+        mem = [[0] * (P+5) for _ in range(G + 5)]
+        ans = 0
+        mem[0][0] = 1
+        for i in range(n):
+            g, p = group[i], profit[i]
+            for j in range(G-g, -1, -1):
+                for k in range(P+1):
+                    if p + k >= P:
+                        mem[j+g][P] += mem[j][k]
+                        mem[j+g][P] %= M
+                        ans += mem[j][k]
+                        ans %= M
+                    else:
+                        mem[j+g][p+k] += mem[j][k]
+                        mem[j+g][p+k] %= M
+
+        return ans
+
+
+class Solution(object):
+    def gcd(self, a, b):
+        if 0 == b:
+            return a
+        return self.gcd(b, a % b)
+
+    def nthMagicalNumber(self, n, a, b):
+        """
+        :type N: int
+        :type A: int
+        :type B: int
+        :rtype: int
+        """
+        c = a * b / self.gcd(a, b)
+        lo, hi = 1, 1 << 60
+        while lo < hi:
+            mid = (lo + hi) / 2
+            t = mid / a + mid / b - mid / c
+            if t < n:
+                lo = mid + 1
+            else:
+                hi = mid
+        return lo % 1000000007
+
+
