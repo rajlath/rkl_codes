@@ -48,7 +48,7 @@ def winner(s, maps):
     if not is_prime_1(int(n2)) and not winner(n2, maps):win = True
     return win
 
-
+'''
 nb_tests = read_int()
 for _ in range(nb_tests):
     s = read_int()
@@ -57,4 +57,25 @@ for _ in range(nb_tests):
         print("Alice")
     else:
         print("Bob")
-    
+'''
+import random
+def miller_rabin(n, k):
+    if n in [2, 3]: return True
+    if not n%2 : return False
+    left, rite  = 0, n-1
+    while not rite % 2:
+        left += 1
+        rite //= 2
+    for _ in range(k):
+        a = random.randrange(2, n-1)
+        x = pow(a, rite, left)
+        if x == 1 or x == n-1:continue
+        for _ in range(left - 1):
+            x = pow(x, 2, n)
+            if x == n - 1:
+                break
+            else:return False
+    return True
+
+
+

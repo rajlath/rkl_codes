@@ -24,3 +24,30 @@ class Solution(object):
 
 print(Solution().sumSubarrayMins([3,1,2,4]))
 
+class Solution {
+    const long M = 1000000007;
+    typedef vector<int> vi;
+    long sumSM(int l, int r, vi&A){
+        long ans = 0;
+        if(l>=r) return 0;
+        if(l==r-1) return A[l];
+        int idx = l, m = A[l];
+        for(int i=l; i<r; ++i) if(A[i] < m){
+            m = A[i];
+            idx = i;
+        }
+        ans = long(idx+1-l) * long(r-idx) * long(m);
+        ans %= M;
+        ans += sumSM(l, idx, A);
+        ans %= M;
+        ans += sumSM(idx+1, r, A);
+        ans %= M;
+        return ans;
+    }
+public:
+    int sumSubarrayMins(vector<int>& A) {
+        int n = A.size();
+        return int(sumSM(0, n, A));
+    }
+};
+

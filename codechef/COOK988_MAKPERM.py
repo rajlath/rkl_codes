@@ -1,0 +1,32 @@
+
+# -*- coding: utf-8 -*-
+# @Date    : 2018-09-24 09:24:59
+# @Author  : raj lath (oorja.halt@gmail.com)
+# @Link    : https://www.codechef.com/COOK98B/problems/MAKPERM
+# @Version : 1.0.0
+
+from sys import stdin
+
+max_val=int(10e12)
+min_val=int(-10e12)
+
+def read_int()     : return int(stdin.readline())
+def read_ints()    : return [int(x) for x in stdin.readline().split()]
+def read_str()     : return input()
+def read_strs()    : return [x for x in stdin.readline().split()]
+
+'''
+2
+4
+1 2 3 3
+3
+2 6 2
+'''
+nb_test = read_int()
+for _ in range(nb_test):
+    lens = read_int()
+    arrs = {x:1 for x in read_ints()}
+    vals = sum([1 for x in arrs if x in range(1, lens+1)])
+    print(lens - vals)
+
+
