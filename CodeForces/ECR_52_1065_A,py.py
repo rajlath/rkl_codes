@@ -14,11 +14,13 @@ def read_int()     : return int(stdin.readline())
 def read_ints()    : return [int(x) for x in stdin.readline().split()]
 def read_str()     : return input()
 def read_strs()    : return [x for x in stdin.readline().split()]
+
+
 nb_test = read_int()
 for _ in range(nb_test):
     have_roubles, if_bought, get_free, price = read_ints()
     bought  = have_roubles // price
-    bought += (bought // if_bought) * got_free
+    bought += (bought // if_bought) * get_free
     print(bought)
 
 

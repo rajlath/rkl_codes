@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# @Date    : 2018-10-12 16:25:35
+# @Date    : 2018-10-02 08:00:37
 # @Author  : raj lath (oorja.halt@gmail.com)
 # @Link    : link
 # @Version : 1.0.0
@@ -14,11 +14,11 @@ def read_int()     : return int(stdin.readline())
 def read_ints()    : return [int(x) for x in stdin.readline().split()]
 def read_str()     : return input()
 def read_strs()    : return [x for x in stdin.readline().split()]
+
+sides = {'Tetrahedron':4,'Cube': 6 ,'Octahedron':8,'Dodecahedron':12,'Icosahedron':20}
+ans   = 0
 nb_test = read_int()
 for _ in range(nb_test):
-    have_roubles, if_bought, get_free, price = read_ints()
-    bought  = have_roubles // price
-    bought += (bought // if_bought) * got_free
-    print(bought)
-
+    ans += sides[input()]
+print(ans)
 

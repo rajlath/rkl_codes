@@ -1,22 +1,31 @@
-N = 1000000
-primes = [True] * (N+1)
-primes[0] = False
-primes[1] = False
+def sieve(n):
+    maxn = (n
+    '\
+    huj]'h * 10 + 100
+    Size = n
+    prime = [0] * Size
+    prime[0] = 2
+    cnt = 1
+    mark = [False] * maxn
+    for i in xrange(3, n + 1, 2):
+        if not mark[i]:
+            prime[cnt] = i
+            cnt += 1
+        j = 1
+        while j < cnt and  prime[j] <= n // i:
+            mark[i*prime[j]] = 1
+            if( not (i%prime[j])): break
+            j +=1
+    return prime, cnt
+
 n = int(input())
-i = 2
-while i*i < (n+1):
-    for i in range(2, N+1):
-        if primes[i]:
-            j = i * i
-            while j < N+1:
-                primes[j] = False
-                j += 1
-
-
-ans=[]
-for i in range(5, n):
-    if primes[i-2] and primes[i]:
-        ans.append(primes[i-2])
+primes, cnt = sieve(n)
+ans = []
+for i in xrange(1, cnt):
+    if primes[i] - primes[i-1] == 2:
+        ans.append(i-1)
 print(len(ans))
-for i in range(len(ans)):
-    print("{} {}".format(2, ans[i]))
+for i in xrange(len(ans)):
+    print("{} {}".format(2, primes[ans[i]]))
+
+

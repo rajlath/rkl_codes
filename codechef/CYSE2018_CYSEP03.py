@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# @Date    : 2018-10-12 16:25:35
+# @Date    : 2018-09-30 15:05:32
 # @Author  : raj lath (oorja.halt@gmail.com)
 # @Link    : link
 # @Version : 1.0.0
@@ -14,11 +14,17 @@ def read_int()     : return int(stdin.readline())
 def read_ints()    : return [int(x) for x in stdin.readline().split()]
 def read_str()     : return input()
 def read_strs()    : return [x for x in stdin.readline().split()]
-nb_test = read_int()
-for _ in range(nb_test):
-    have_roubles, if_bought, get_free, price = read_ints()
-    bought  = have_roubles // price
-    bought += (bought // if_bought) * got_free
-    print(bought)
+
+from itertools import accumulate
+nb_student, rohit, nb_query = read_ints()
+scores = read_ints()
+valids = [1 if scores[i]>rohit else 0 for i in range(nb_student)]
+valids = list(accumulate(valids))
+for i in range(nb_query):
+    if rohit <= 60:
+        print("Sad")
+    else:
+        l, r = read_ints()
+        print(["Happy", "Sad"][valids[l-1]!=valids[r-1]])
 
 

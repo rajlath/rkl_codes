@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# @Date    : 2018-10-12 16:25:35
+# @Date    : 2018-10-08 08:28:00
 # @Author  : raj lath (oorja.halt@gmail.com)
 # @Link    : link
 # @Version : 1.0.0
@@ -14,11 +14,25 @@ def read_int()     : return int(stdin.readline())
 def read_ints()    : return [int(x) for x in stdin.readline().split()]
 def read_str()     : return input()
 def read_strs()    : return [x for x in stdin.readline().split()]
-nb_test = read_int()
-for _ in range(nb_test):
-    have_roubles, if_bought, get_free, price = read_ints()
-    bought  = have_roubles // price
-    bought += (bought // if_bought) * got_free
-    print(bought)
+
+
+
+lens = read_int()
+A    = read_ints()
+B    = read_ints()
+l, r = min_val, max_val
+sums = 0
+for i in range(lens):
+    sums += max(0, max(A[i]-r, l-B[i]))
+    if l < A[i]:
+        l = A[i]
+    elif B[i] < l:
+        l = B[i]
+    if r < A[i]:
+        r = A[i]
+    elif  B[i] < r:
+        r = B[i]
+
+print(sums)
 
 

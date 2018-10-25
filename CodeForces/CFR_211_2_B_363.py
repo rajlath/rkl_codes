@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# @Date    : 2018-10-12 16:25:35
+# @Date    : 2018-10-19 07:22:47
 # @Author  : raj lath (oorja.halt@gmail.com)
 # @Link    : link
 # @Version : 1.0.0
@@ -14,11 +14,15 @@ def read_int()     : return int(stdin.readline())
 def read_ints()    : return [int(x) for x in stdin.readline().split()]
 def read_str()     : return input()
 def read_strs()    : return [x for x in stdin.readline().split()]
-nb_test = read_int()
-for _ in range(nb_test):
-    have_roubles, if_bought, get_free, price = read_ints()
-    bought  = have_roubles // price
-    bought += (bought // if_bought) * got_free
-    print(bought)
 
+nb_planks, widths = read_ints()
+heights = read_ints()
+mins = curr = sum(heights[:widths])
+pos  = 1
+for i in range(widths, nb_planks):
+    curr += heights[i] - heights[i-widths]
+    if curr < mins:
+        pos = i - widths + 2
+        mins = curr
+print(pos)
 
