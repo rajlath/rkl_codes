@@ -25,7 +25,6 @@ def cycle_length_four(edges):
     # No squares if we don't find any matching neighbor pairs.
     return -1
 
-
 def main():
     '''Main call. Reads, runs, and saves problem specific data.'''
     # Read the input data.

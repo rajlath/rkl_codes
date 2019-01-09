@@ -1,0 +1,22 @@
+for _ in range(int(input())):
+    n=int(input())
+    arr=list(map(int,input().split()))
+    cy,cm,cd=map(int,input().split())
+    y,m,d=map(int,input().split())
+    base=sum(arr)*(y-1)
+    #print(base)
+    base+=(sum(arr[:m-1]))
+    #print(base)
+    base+=d
+    #print(base)
+    base+=((y-1)//4)
+    print(base)
+    chef=sum(arr)*(cy-1)
+    #print(chef)
+    chef+=(sum(arr[:cm-1]))
+    #print(chef)
+    chef+=cd
+    #print(chef)
+    chef+=((cy-1)//4)
+    print(chef)
+    print(base-chef+1)
