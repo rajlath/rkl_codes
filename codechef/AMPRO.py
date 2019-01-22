@@ -1,8 +1,8 @@
-'''
+''
 Input:
 Amal Kumar Perera
 
-Output:
+Output
 A.K.Perera
 '''
 s = [x for x in input().split()]

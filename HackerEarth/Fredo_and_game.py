@@ -5,12 +5,11 @@ for _ in range(int(input())):
     for i, v  in enumerate(route):
         if v==1:has+=2
         else:has -= 1
-        if has == 0:
+        if has == 0 and i != obst-1:
             failed=True
             break
-            
-        
-    if failed:print("No", i+1)        
+
+    if failed:print("No", i+1)
     else:print("Yes", has)
 
 '''
