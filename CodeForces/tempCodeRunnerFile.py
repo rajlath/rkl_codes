@@ -1,12 +1,11 @@
-x = int(input())
-ans = [-1]
-for i in range(x-1, 1, -1):
-    done = False
-    for j in range(i-1, 1, -1):
-        if i % j == 0:
-            ans = [i, j]
-            done = True
-            break
-    if done:break
-print(*ans)
 
+for i in range(row):
+    curr = input()
+    rects.append(curr)
+    if "*" in curr:
+        star_rows += "*"
+        if curr.index("*") < first_col:
+            first_col = curr.find("*")
+        if curr.rindex("*") > last_col:
+            last_col = curr.rfind("*")
+    else:

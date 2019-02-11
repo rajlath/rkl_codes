@@ -1,1 +1,1 @@
-raj lath
+        curr = 0
