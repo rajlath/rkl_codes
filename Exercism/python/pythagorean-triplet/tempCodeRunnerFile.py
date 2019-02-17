@@ -1,0 +1,1 @@
+  self.assertEqual(triplets_with_sum(1001), expected)
