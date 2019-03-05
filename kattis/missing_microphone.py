@@ -1,0 +1,1 @@
+print(["no hiss", "hiss"]["ss" in input()])
