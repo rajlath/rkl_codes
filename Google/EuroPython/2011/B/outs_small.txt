@@ -1,0 +1,1032 @@
+Case #1: 
+"AAAA"
+:(
+:(
+"BAAAB"
+"BAAAB"
+"BAAB"
+:(
+"BAAB"
+:(
+"BBBB"
+Case #2: 
+:(
+:(
+:(
+:(
+"AABA"
+"BABA"
+"ABBA"
+"AAA"
+"BAAB"
+"BABB"
+Case #3: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #4: 
+"M"
+" BE"
+" G"
+"V"
+"W"
+"AL"
+"M"
+"C"
+" Y"
+" A"
+Case #5: 
+:(
+:(
+"ABAA"
+:(
+:(
+:(
+"ABAA"
+"ABB"
+:(
+"BBBB"
+Case #6: 
+"AABA"
+"BBA"
+"AABA"
+"BBA"
+"ABAA"
+:(
+:(
+"BAAA"
+"BBA"
+:(
+Case #7: 
+:(
+:(
+Case #8: 
+"V"
+"Y"
+"Q"
+"H"
+"S"
+"B"
+Case #9: 
+:(
+"AAABB"
+:(
+"ABA"
+:(
+"ABA"
+"BAAB"
+"BAAB"
+"BBA"
+"BBBB"
+Case #10: 
+"AAA"
+"AABAB"
+"AABB"
+"ABABA"
+"ABABB"
+"BBAB"
+"BAAB"
+"AAA"
+"BBAB"
+"BBAB"
+Case #11: 
+:(
+:(
+:(
+"ABBAA"
+:(
+:(
+"AAAA"
+"AABB"
+"BAB"
+"AAAA"
+Case #12: 
+:(
+"AABBB"
+:(
+"BBBB"
+:(
+"BAA"
+"BAA"
+:(
+"ABA"
+"BABB"
+Case #13: 
+:(
+"AAA"
+"ABBA"
+"AABA"
+"BAABB"
+"ABBA"
+:(
+"BAABB"
+"BAB"
+"BBAA"
+Case #14: 
+""
+Case #15: 
+:(
+:(
+"ABB"
+"BAA"
+"ABB"
+"BABA"
+:(
+"BBA"
+"BBA"
+"BBA"
+Case #16: 
+"R"
+:(
+"R"
+Case #17: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #18: 
+:(
+"AABA"
+"AABB"
+:(
+"BBAA"
+"ABAA"
+"BABB"
+:(
+"BABB"
+"BBAB"
+Case #19: 
+:(
+:(
+"AAAAA"
+"AAB"
+"BAB"
+:(
+"BBA"
+"BAAA"
+"AAB"
+"BAB"
+Case #20: 
+:(
+"AAAA"
+"AABA"
+"ABAB"
+"ABBAA"
+"BAAB"
+"BAAAB"
+"BAAB"
+"BAAAB"
+"BAAB"
+Case #21: 
+"AAAA"
+"ABB"
+"ABB"
+"ABAA"
+"ABB"
+:(
+"ABAA"
+"AAAB"
+"ABB"
+"BBB"
+Case #22: 
+"ABA"
+:(
+:(
+"ABA"
+"BB"
+:(
+"CCC"
+:(
+"CCC"
+"CCC"
+Case #23: 
+"ABAB"
+:(
+"BBB"
+:(
+:(
+"BAA"
+:(
+"ABBA"
+"BAA"
+"BBB"
+Case #24: 
+"AABA"
+:(
+"ABAB"
+:(
+"AABB"
+"AABB"
+"AABA"
+"AABB"
+"BABB"
+"BBB"
+Case #25: 
+:(
+:(
+"AB"
+"CA"
+"BAC"
+"CA"
+:(
+"CA"
+"CBB"
+"CCB"
+Case #26: 
+:(
+:(
+:(
+:(
+"AAAA"
+"AAAB"
+"AABA"
+"BABA"
+"ABB"
+"BBA"
+Case #27: 
+"HE"
+" L"
+" S"
+" U"
+" C"
+"J"
+"BO"
+"AS"
+"V"
+"FE"
+Case #28: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #29: 
+:(
+:(
+"BA"
+:(
+"ACA"
+"CB"
+"BA"
+"CB"
+"BCA"
+"CAA"
+Case #30: 
+:(
+"AABA"
+:(
+"BBB"
+"AABA"
+"ABBA"
+:(
+:(
+"ABBA"
+"AABA"
+Case #31: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #32: 
+:(
+"AAA"
+"AABA"
+"ABAB"
+"BAA"
+:(
+"BAA"
+"ABAB"
+"ABBB"
+"BABA"
+Case #33: 
+:(
+"AAB"
+"AC"
+"BA"
+:(
+"BA"
+"AC"
+"BC"
+"BC"
+"CB"
+Case #34: 
+:(
+:(
+"AAAB"
+"BB"
+:(
+"BAAA"
+:(
+"AAAA"
+:(
+"BB"
+Case #35: 
+"DA"
+" C"
+"W"
+" T"
+"J"
+"EE"
+"ER"
+"V"
+" D"
+" L"
+Case #36: 
+"AB"
+"AB"
+"AB"
+"CB"
+"AB"
+"BBB"
+"AAA"
+:(
+"CB"
+"CC"
+Case #37: 
+"G"
+"AM"
+"C"
+" M"
+" E"
+" Y"
+"AY"
+"G"
+"F"
+" R"
+Case #38: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #39: 
+:(
+:(
+"AABB"
+"BAA"
+"AAA"
+"ABAB"
+:(
+"BAA"
+:(
+:(
+Case #40: 
+"AAA"
+"AABAB"
+:(
+"ABABA"
+"ABABB"
+:(
+:(
+"ABABB"
+"BBAB"
+"BBAB"
+Case #41: 
+"ME"
+" L"
+"AN"
+" E"
+"BO"
+"K"
+"DA"
+"AR"
+" R"
+"AL"
+Case #42: 
+:(
+"AAB"
+"ABA"
+:(
+"AAB"
+:(
+:(
+:(
+:(
+"AAB"
+Case #43: 
+"BAA"
+:(
+"ABBA"
+:(
+"BBB"
+:(
+"BAA"
+"ABBA"
+:(
+"BBB"
+Case #44: 
+:(
+"Z"
+Case #45: 
+"J"
+"W"
+"BL"
+"ET"
+"V"
+"IA"
+"C"
+"EY"
+" K"
+" L"
+Case #46: 
+" O"
+"W"
+"CU"
+"IT"
+"CI"
+"MO"
+"G"
+" R"
+"X"
+"BO"
+Case #47: 
+:(
+"AABA"
+"AABA"
+"ABBA"
+:(
+:(
+"AABA"
+"BAB"
+"BAAAB"
+"BAAB"
+Case #48: 
+"V"
+" B"
+"AD"
+"S - M"
+"C"
+"EN"
+" A"
+"MO"
+"J"
+"AR"
+Case #49: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #50: 
+"AA"
+"AA"
+"ABAB"
+"AA"
+"AA"
+"AA"
+"BBB"
+"BBAB"
+"ABAB"
+"BBB"
+Case #51: 
+"FI"
+"GI"
+" H"
+"MO"
+"E T"
+" S"
+" P"
+"FF"
+"C"
+"V"
+Case #52: 
+"BB"
+"BB"
+"BA"
+Case #53: 
+"AAAB"
+"AAAB"
+:(
+:(
+"BAAA"
+"ABB"
+:(
+"BBA"
+"BBA"
+"BBB"
+Case #54: 
+:(
+"ABAA"
+"ABAB"
+:(
+"AAA"
+"ABAB"
+"ABBA"
+"AAA"
+"BBAA"
+:(
+Case #55: 
+"V"
+"C"
+"G"
+"ME"
+"BI"
+"X"
+"MY"
+" I"
+" A"
+"FF"
+Case #56: 
+"E"
+"E"
+Case #57: 
+:(
+"AAB"
+"BB"
+"BB"
+:(
+:(
+"AAB"
+"BB"
+"BB"
+"BB"
+Case #58: 
+"AAAA"
+"BAB"
+:(
+"ABB"
+:(
+"ABB"
+"ABB"
+"BAB"
+"AAAA"
+"ABB"
+Case #59: 
+"J"
+"W"
+" M"
+"AB"
+" N"
+" R"
+"G"
+"AL"
+"W"
+"ER"
+Case #60: 
+"FI"
+"V"
+" R"
+" H"
+"AL"
+" D"
+"AR"
+"P"
+"FO"
+"AC"
+Case #61: 
+"EL"
+" K"
+" ME"
+" S"
+" P"
+"AD"
+" D"
+" E"
+"F"
+" B"
+Case #62: 
+"E F"
+" G"
+"C"
+"L "
+"AW"
+" P"
+"DA"
+"J"
+" B"
+"BO"
+Case #63: 
+:(
+:(
+"AB"
+"AB"
+"CA"
+"BB"
+"CA"
+:(
+:(
+"CCB"
+Case #64: 
+:(
+"ABA"
+"ABB"
+"ABA"
+"ABB"
+:(
+:(
+"BAAAB"
+"ABB"
+"BBBA"
+Case #65: 
+"J"
+"AL"
+" L"
+"P"
+"AS"
+" N"
+"X"
+"AC"
+"RE"
+"BU"
+Case #66: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAA"
+"AAA"
+:(
+Case #67: 
+" P"
+" E"
+" B"
+" K"
+" Y"
+"Z"
+"A "
+"CH"
+"EE"
+"AN"
+Case #68: 
+:(
+"AAB"
+"ABB"
+:(
+"AAA"
+"AAA"
+"AAA"
+"BAB"
+"BBBB"
+"BBBB"
+Case #69: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #70: 
+:(
+"ABB"
+"ABAA"
+"ABB"
+:(
+"ABAA"
+"ABB"
+"ABB"
+"AAAA"
+"BBA"
+Case #71: 
+""
+Case #72: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #73: 
+:(
+"BAA"
+"ABB"
+"ABAB"
+:(
+"BAA"
+"ABB"
+"BAA"
+"ABAB"
+:(
+Case #74: 
+"AB"
+"AC"
+:(
+:(
+"AB"
+"BBC"
+"BCB"
+:(
+:(
+"CCB"
+Case #75: 
+:(
+:(
+"ABAAA"
+:(
+:(
+"AAAB"
+:(
+"ABAB"
+:(
+"BBB"
+Case #76: 
+:(
+"AAAAA"
+"ABAB"
+"AAB"
+"AAAAA"
+"AAB"
+"ABAA"
+"BABBA"
+:(
+"BBB"
+Case #77: 
+:(
+:(
+:(
+:(
+"AA"
+"BB"
+"BB"
+"CA"
+"CB"
+"CB"
+Case #78: 
+"A"
+"C"
+Case #79: 
+:(
+"AAAA"
+"AAB"
+"AAB"
+:(
+"ABAB"
+"ABB"
+"BBAA"
+"BABA"
+"BBAA"
+Case #80: 
+"AAAA"
+"AAAA"
+"AAAB"
+"AABB"
+"ABAB"
+"ABAB"
+"BABA"
+:(
+:(
+"BABA"
+Case #81: 
+"AAAB"
+"AABB"
+"ABAB"
+"BBAB"
+"ABBB"
+:(
+"AAAB"
+"ABAB"
+:(
+"BAAA"
+Case #82: 
+"AAA"
+"AAA"
+:(
+:(
+"AABB"
+"BAB"
+:(
+"BAB"
+"AAA"
+:(
+Case #83: 
+:(
+:(
+"AAA"
+"AABA"
+"ABBA"
+"BBB"
+"BAA"
+"BBB"
+"AAA"
+:(
+Case #84: 
+" Y"
+"ER"
+"MY"
+"C"
+"HO"
+"V"
+" P"
+" B"
+"- M"
+" I"
+Case #85: 
+"AAAA"
+"AAB"
+"BBB"
+:(
+"AAAA"
+"AAB"
+"ABAAA"
+"ABAB"
+"ABBA"
+"BBB"
+Case #86: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #87: 
+:(
+"AAA"
+"AABA"
+:(
+"BABB"
+:(
+:(
+:(
+"BBBB"
+"BBBB"
+Case #88: 
+:(
+"AAAAA"
+"AAAB"
+:(
+"AAAB"
+"BB"
+:(
+"AABA"
+"AABA"
+"BB"
+Case #89: 
+:(
+"ABAAA"
+"ABAAB"
+"ABBA"
+:(
+:(
+:(
+:(
+"BBAAA"
+"BBAAB"
+Case #90: 
+"AL"
+"BO"
+"I "
+"C"
+" R"
+" N"
+"J"
+"F"
+" Y"
+" G"
+Case #91: 
+:(
+"AAA"
+"AAC"
+"BB"
+:(
+"BB"
+"BC"
+:(
+"BB"
+"CB"
+Case #92: 
+"AD"
+"BON"
+"CH"
+"K"
+"AR"
+"OY"
+" R"
+"F"
+"DA"
+"U"
+Case #93: 
+"AAAA"
+"ABAAA"
+"ABB"
+"ABAB"
+:(
+"ABB"
+"AABA"
+:(
+"BBA"
+"ABB"
+Case #94: 
+:(
+"AAAA"
+"AAB"
+"AAAA"
+"AAB"
+"ABAB"
+"ABAB"
+"BBAA"
+"AAAA"
+"BBB"
+Case #95: 
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+:(
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Case #96: 
+"ABAA"
+"BAB"
+:(
+:(
+:(
+"AAA"
+:(
+:(
+"AAA"
+:(
+Case #97: 
+"AAAA"
+"BAA"
+"ABB"
+"ABABA"
+"ABB"
+:(
+"BAA"
+"ABABA"
+"BBB"
+"BBB"
+Case #98: 
+"ABBA"
+"ABBB"
+"ABA"
+:(
+"AAAB"
+"ABBB"
+"BBAA"
+"ABBA"
+"ABBB"
+"BBBA"
+Case #99: 
+"AB"
+"AC"
+"AA"
+:(
+:(
+:(
+"AC"
+"CBB"
+"CC"
+"CC"
+Case #100: 
+"AR"
+" D"
+" G"
+" Y"
+"W"
+"EF"
+"GE"
+" V"
+"CI"
+" R"

@@ -1,5 +1,7 @@
 
 from collections import Counter
+
+
 recipe = Counter(input())
 nb, ns, nc = [int(x) for x in input().split()]
 vb, vs, vc = [int(x) for x in input().split()]
