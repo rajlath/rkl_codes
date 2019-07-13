@@ -1,0 +1,37 @@
+
+# -*- coding: utf-8 -*-
+# @Date    : 2019-06-10 13:44:49
+# @Author  : raj lath (oorja.halt@gmail.com)
+# @Link    : link
+# @Version : 1.0.0
+
+import sys
+sys.setrecursionlimit(10**5+1)
+
+inf     =  int(10 ** 20)
+max_val =  inf
+min_val = -inf
+
+RW  = lambda : sys.stdin.readline().strip()
+RI  = lambda : int(RW())
+RMI = lambda : [int(x) for x in sys.stdin.readline().strip().split()]
+RWI = lambda : [x for x in sys.stdin.readline().strip().split()]
+
+
+nb_test = RI()
+for _ in range(nb_test):
+    curr = RI()
+    counts = 0
+    while curr%5==0:
+        counts += 3
+        curr //= 5
+    while curr%3==0:
+        counts += 2
+        curr //= 3
+    while curr%2==0:
+        counts += 1
+        curr //= 2
+    if curr > 1: print(-1)
+    else:print(counts)
+
+

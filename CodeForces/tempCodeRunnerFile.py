@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# @Date    : 2019-03-22 08:08:26
+# @Date    : 2019-06-29 08:11:19
 # @Author  : raj lath (oorja.halt@gmail.com)
 # @Link    : link
 # @Version : 1.0.0
@@ -17,30 +17,17 @@ RI  = lambda : int(RW())
 RMI = lambda : [int(x) for x in sys.stdin.readline().strip().split()]
 RWI = lambda : [x for x in sys.stdin.readline().strip().split()]
 
-vertices, limit = RMI()
-graph = [[] for _ in range(vertices)]
-for i in range(vertices - 1):
-    u, v, x = RMI()
-    graph[u - 1].append((v - 1, x))
-    graph[v - 1].append((u - 1, x))
-done = [0 for _ in range(vertices)]
-comps = []
-for i in range(vertices):
-    if done[i]:continue
-    done[i] = 1
-    comps.append([i])
-    qu = [i]
-    while qu:
-        curr_u = qu[0]
-        qu = qu[1:]
-        for u, x in graph[curr_u]:
-            if x == 0 and done[u] == 0:
-                qu.append(u)
-                done[u] = 1
-                comps[-1].append(u)
-answer = vertices ** limit
+def non_match(a, b):
+    return 1 - sum([1 for x, y in zip(a, b) if x != y]) % 2
+src, tgt = [int(x) for x in input()], [int(x) for x in input()]
+lens, lent = len(src), len(tgt)
 
-for comp in comps:
-    answer -= len(comp) ** limit
+answ = 0
+for i in range(lens - lent):
+    curr = src[i:i+lent]
+    answ += non_match(curr, tgt)
+print(answ)
 
-print( answer % (10 ** 9 + 7))
+
+
+
