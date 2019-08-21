@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# @Date    : 2019-06-29 08:11:19
+# @Date    : 2019-08-01 07:30:35
 # @Author  : raj lath (oorja.halt@gmail.com)
 # @Link    : link
 # @Version : 1.0.0
@@ -17,17 +17,17 @@ RI  = lambda : int(RW())
 RMI = lambda : [int(x) for x in sys.stdin.readline().strip().split()]
 RWI = lambda : [x for x in sys.stdin.readline().strip().split()]
 
-def non_match(a, b):
-    return 1 - sum([1 for x, y in zip(a, b) if x != y]) % 2
-src, tgt = [int(x) for x in input()], [int(x) for x in input()]
-lens, lent = len(src), len(tgt)
 
-answ = 0
-for i in range(lens - lent):
-    curr = src[i:i+lent]
-    answ += non_match(curr, tgt)
-print(answ)
-
-
-
-
+options = {x:[0] * 9 for x in "smp"}
+for x in input().split():
+    options[x[1]][int(x[0]) - 1] += 1
+ans = 2
+for c in "smp":
+    curr = options[c]
+    if max(curr) >= 2:
+        ans = min(ans, 3 - max(curr))
+    else:
+        for i in range(7):
+            sums = sum(curr[i:i+3])
+            ans  = min(ans, 3 - sums)
+print(ans)            

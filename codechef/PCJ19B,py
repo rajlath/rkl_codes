@@ -1,0 +1,7 @@
+angle=float(input())
+if int(angle)==angle:
+    angle=int(angle)
+ans = angle * 2
+if 90 < angle <= 180:
+    ans = 360 - ans
+print(ans)

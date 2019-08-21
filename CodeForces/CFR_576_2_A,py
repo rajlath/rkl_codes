@@ -1,0 +1,6 @@
+days, before, after = [int(a) for a in input().split()]
+rains = [int(a) for a in input().split()]
+i = 0
+while rains[i] > min(rains[max(0, i - before):min(i + after + 1, days)]):
+  i += 1
+print(i + 1)

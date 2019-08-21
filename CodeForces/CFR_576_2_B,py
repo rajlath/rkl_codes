@@ -1,0 +1,4 @@
+H, L = [int(x) for x in input().split()]
+ans = (((L * L) / H) - H) / 2
+ans1 = (L**2-H**2)/(2*H)
+print(ans1)

@@ -1,0 +1,5 @@
+nums = input()
+hours = int(input())
+perhour = float(input())
+print("NUMBER = {}".format(nums))
+print("SALARY = U$ {:.2f}".format(hours * perhour))

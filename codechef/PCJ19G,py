@@ -1,0 +1,40 @@
+N = int(1e5) + 3
+tree = [0] * (2 * N)
+
+n = int(input())
+arr = [int(x) for x in input().split()]
+for i in range(n):
+    tree[n + i] = arr[i]
+
+# build segtree
+for i in range(n - 1, -1, -1):
+    tree[i] = tree[2 * i] + tree[2 * i + 1]
+
+
+def update(ind, val):
+    ind += n
+    tree[ind] = val
+    while ind > 1:
+        ind //= 2
+        tree[ind] = tree[2 * ind] + tree[2 * ind + 1]
+
+def query(left, rite):
+    left += n
+    rite += n
+    total = 0
+    while left < rite:
+        if left%2:
+            total += tree[left]
+            left += 1
+        if rite%2:
+            rite -= 1
+            total += tree[rite]
+        left //= 2
+        rite //= 2
+    return total
+
+for i in range(int(input())):
+    q, a, b = [int(x) for x in input().split()]
+    if q == 1:update(a - 1, b)
+    else:
+        print(query(a-1, b))
